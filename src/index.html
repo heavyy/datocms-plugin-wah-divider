@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/datocms-plugins-sdk"></script>
+  <link href="https://unpkg.com/datocms-plugins-sdk/dist/sdk.css" media="all" rel="stylesheet" />
+  <link href="style.css" media="all" rel="stylesheet" />
+</head>
+<body>
+  <input type="text" />
+  <script type="text/javascript">
+    DatoCmsPlugin.init(function(plugin) {
+      const input = document.querySelector("input");
+
+      plugin.startAutoResizer()
+
+      input.value = plugin.getFieldValue(plugin.fieldPath);
+
+      plugin.addFieldChangeListener(plugins.fieldPath, function(newValue) {
+        input.value = newValue;
+      });
+
+      input.addEventListener("change", function(e) {
+        plugin.setFieldValue(plugin.fieldPath, e.target.value);
+      });
+    });
+  </script>
+
+	<div class="dato_plugin__wahDivider">
+		<div class="title">
+			WAH
+		</div>
+		<div class="description">
+			This is a WAH divider
+		</div>
+	</div>
+
+</body>
+</html>
