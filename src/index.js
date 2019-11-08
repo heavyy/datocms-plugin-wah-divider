@@ -17,4 +17,6 @@ window.DatoCmsPlugin.init((plugin) => {
   document.body.appendChild(container);
   container.appendChild(title);
   container.appendChild(helper);
+
+  console.log(plugin.field.attributes.api_key);
 });

@@ -41,7 +41,7 @@
       "label": "Display this title in your divider",
       "type": "string",
       "required": true,
-      "hint": ""
+      "hint": "Please insert the fields API key separated by commas"
     }
   ]
 }
