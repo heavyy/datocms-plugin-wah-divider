@@ -1,4 +1,4 @@
-import './style.sass';
+import './style.scss';
 
 window.DatoCmsPlugin.init((plugin) => {
   plugin.startAutoResizer();
@@ -7,9 +7,9 @@ window.DatoCmsPlugin.init((plugin) => {
   const title = document.createElement('div');
   const helper = document.createElement('div');
 
-  container.classList.add('wahDivider');
-  title.classList.add('wahDivider_title');
-  helper.classList.add('wahDivider_help');
+  container.classList.add('wah-divider');
+  title.classList.add('wah-divider__title');
+  helper.classList.add('wah-divider__help');
 
   title.textContent = plugin.field.attributes.appeareance.parameters.title;
   helper.textContent = 'with helper text';
