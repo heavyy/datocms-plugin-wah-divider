@@ -12,7 +12,7 @@ window.DatoCmsPlugin.init((plugin) => {
   helper.classList.add('wah-divider__help');
 
   title.textContent = plugin.field.attributes.appeareance.parameters.title;
-  helper.textContent = 'with helper text';
+  helper.textContent = plugin.field.attributes.appeareance.parameters.description;
 
   document.body.appendChild(container);
   container.appendChild(title);

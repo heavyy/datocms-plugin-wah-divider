@@ -40,8 +40,13 @@
       "id": "title",
       "label": "Display this title in your divider",
       "type": "string",
-      "required": true,
-      "hint": "Title here"
+      "required": true
+    },
+    {
+      "id": "description",
+      "label": "Add a short description for extra help",
+      "type": "string",
+      "required": false
     }
   ]
 }
